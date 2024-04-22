@@ -1,0 +1,2824 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Montserrat:ital,wght@0,100;0,200;0,600;0,700;1,100;1,200;1,300&family=Poppins:wght@100;200;300;400;500&display=swap");
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+  background-color: #041e2e !important;
+  color: white !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu li {
+  margin: 10px 15px 0 15px;
+}
+.menu li .link {
+  text-decoration: none;
+  color: white;
+}
+.link1{
+  text-decoration: none;
+}
+.loaderParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardSection{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* .heroSectionHeading.typeWriter{
+  margin-top: -6rem;
+} */
+.button {
+  display: flex;
+  width: 258px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  color: #fed21c;
+  background: rgba(255, 255, 255, 0.28);
+}
+section {
+  height: 100vh;
+}
+.heroSectionHeading {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 61.333px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 120px;
+  width: 45rem;
+}
+.atmSectionHeading {
+  display: none;
+}
+.heroSectionPara {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  /* font-weight: 300; */
+  line-height: normal;
+}
+.heroSectionImage {
+  width: 99%;
+  height: 80%;
+}
+.heroSectionButton {
+  display: flex;
+  width: 280px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  color: #1b2534;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background 0.3s, color 0.3s;
+  z-index: 1;
+}
+.heroSectionButton:hover {
+  background: #1e77aa;
+  color: white;
+}
+.heroSectionButton.addingMore{
+ 
+    padding: 2px;
+    margin-left: 36px;
+    margin-right: 40px;
+    font-size: x-small;
+}
+.newsSectionButton {
+  display: flex;
+  width: 81px;
+  /* padding: 16px 32px; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #1b2534;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  transition: background 0.3s, color 0.3s;
+  z-index: 1;
+}
+.newsSectionButton:hover {
+  background: #1e77aa;
+  color: white;
+}
+.newsbuttonIcon {
+  position: relative;
+  left: -12px;
+  margin-top: 9px;
+  background-color: #fed21c;
+  display: flex;
+  width: 23px;
+  height: 25px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  z-index: 1;
+  top: -4px;
+}
+.buttonIcon {
+  position: relative;
+  left: -17px;
+  margin-top: 9px;
+  background-color: #fed21c;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  z-index: 1;
+}
+.addingButton{
+  position: relative;
+  width: 18px;
+  height: 20px;
+  top: 0.25rem;
+  left: -3rem;
+  background-color: #fed21c;
+  border: none;
+  border-radius: 5px;
+  z-index: 1;
+
+
+}
+.addingButton1{
+  margin-top: -0.4rem;
+  /* border: 1px solid red; */
+}
+.heroSection_icon1 {
+  position: relative;
+  top: 24%;
+  right: -15%;
+  width: 56.545px;
+  height: 56.545px;
+  animation: leftMoving 3s ease-in-out infinite alternate ;
+}
+  @keyframes leftMoving {
+    from{
+      top: 17%;
+      right: -7%;
+  
+    }
+    to{
+      top: 20%;
+      right: -15%;
+    }
+    
+  }
+
+
+.heroSection_icon2 {
+  position: relative;
+  top: -48%;
+  right: -85%;
+  width: 56.011px;
+  height: 56.011px;
+  animation: leftMoving1 3s ease-in-out infinite alternate ;
+
+}
+@keyframes leftMoving1 {
+  from{
+    top: -48%;
+    right: -85%;
+
+  }
+  to{
+    top: -40%;
+    right: -70%;
+  }
+  
+}
+.logo{
+  width: 9rem;
+  height: 4rem;
+}
+
+.heroSection_icon3 {
+  position: relative;
+  bottom: 30%;
+  right: -80%;
+  width: 70.013px;
+  height: 70.013px;
+  animation: leftMoving2 3s ease-in-out infinite alternate ;
+}
+@keyframes leftMoving2 {
+  from{
+    top:-40%;
+    right: -60%;
+
+  }
+  to{
+    top: -25%;
+    right: -70%;
+  }
+  
+}
+.slideMargin{
+  margin-top: 15rem;
+}
+.slideMargin1{
+  text-align: center;
+  margin-top: -6rem;
+    margin-left: 4rem;
+    height: 5rem;
+    padding-top: 1.5rem;
+}
+.newsplus{
+  margin-left: 0.5rem;
+}
+.card1 {
+  position: absolute;
+  width: 338.601px;
+  height: 121.818px;
+  bottom: 20%;
+  right: 58%;
+  animation: rotate1 3s ease-in-out infinite alternate;
+
+}
+@keyframes rotate1 {
+  from {
+    right: 58%;
+    bottom: 25%;
+    /* transform: rotate(0deg);  */
+  }
+  to {
+    right: 58%;
+    bottom: 30%;
+    /* transform: rotate(20deg); */
+  }
+}
+.card2 {
+  position: absolute;
+  width: 303.857px;
+  height: 202.139px;
+  right: 0%;
+  top: 22%;
+  animation: rotate 3s ease-in-out infinite alternate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  to {
+    transform: rotate(20deg); /* Rotate to 360 degrees (one full rotation) */
+  }
+}
+  
+
+.card3 {
+  position: absolute;
+  width: 302.869px;
+  height: 143.531px;
+  bottom: 13%;
+  right: 5%;
+  animation: rotate2 3s ease-in-out infinite alternate;
+}
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  to {
+    transform: rotate(20deg); /* Rotate to 360 degrees (one full rotation) */
+  }
+}
+.section_heading {
+  display: inline-block;
+  border-left: 5px solid #fed21c;
+  height: 58px;
+}
+.section_para {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+
+}
+.serviceSliderFix{
+  position: relative;
+  top: -90px;
+  left: 6rem;
+}
+.HomeSectionImage{
+  width: 75%;
+  height: 100%;
+  position: relative;
+  /* width: 75%;
+  height: 58vh;
+  margin-top: -0.5rem;
+  border-top-left-radius: 0;
+ 
+  z-index: 2;
+  top: -5rem;
+  left: 6rem;
+  border-radius: 10px; */
+  /* animation: leftMoving 3s ease-in-out infinite alternate; */
+
+ 
+}
+.HomeSectionImage.forBorder{
+  border-radius: 10px;
+}
+.SliderImgCustom {
+  /* width: 150px;
+  height: 110px; */
+  /* padding-left: 20px; */
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.SliderImgCustom:hover {
+  filter: none;
+}
+.ceo1{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.SliderImgCustom2 {
+  /* margin-top: 1rem; */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.SliderImgCustom2:hover {
+  filter: none;
+}
+.SliderImgCustom3{
+ /* margin-left: 4.5rem; */
+ filter: grayscale(100%);
+ transition: filter 0.3s ease;
+}
+.SliderImgCustom3:hover {
+  filter: none;
+}
+.SliderImgCustom6{
+  /* margin-top: 1rem; */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+   
+  
+}
+.SliderImgCustom6:hover {
+  filter: none;
+}
+.learnMore{
+  cursor: pointer;
+}
+.learnMore:hover{
+  color:rgb(8, 8, 8);
+}
+
+.learnMore:hover .learnmoreImage
+{
+  filter: brightness(0.1);
+}
+.slick-slider button {
+  display: none !important;
+}
+.section2_heading {
+  font-family: "Poppins";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+}
+.atmMid{
+  margin-top: 5rem;
+}
+.cardBorder {
+  border-left: 2px solid white;
+}
+.backImageSet{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.cardWidth {
+  width: 230px;
+  height: 14rem;
+  margin-left: 20px;
+}
+.flipCardInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cardWidth:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+.increaseSize{
+  border-radius: 1rem;
+}
+.borderSet{
+  margin-left: 1rem;
+}
+.increaseSize, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
+}
+.flipCardBack {
+  background-color:white;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 1rem;
+}
+.purpleCard {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 23.532px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.298px
+}
+.purpleCardText {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins";
+  font-size: 12.295px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12.707px;
+}
+.rectangleSection3{
+  height: 100%;
+  margin-bottom: 8%;
+}
+.purpleCardText1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins";
+  font-size: 10.295px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14.707px;
+  margin-left: 1rem;
+}
+.CardWidthMargin {
+  margin-left: 20px !important;
+}
+.borderFor2ndCard {
+  border: 5px solid #69abd7;
+}
+.dots {
+  position: relative;
+  left: 59%;
+  top: 96px;
+  z-index: -1;
+}
+.galleryVideo {
+  height: 75vh;
+  object-fit: fill;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.galleryVideoParent {
+  position: relative;
+
+  bottom: 80px;
+}
+.seection{
+  margin-top: 3rem;
+}
+.videoStar2 {
+  position: relative;
+  /* bottom: -25px; */
+  left: -353px;
+  top: 449px;
+  z-index: 1;
+}
+/* .videoSection {
+  padding: 0;
+  margin: 0;
+} */
+.firstCounter {
+  color: #fed21c;
+  font-family: "Poppins";
+  font-size: 100.277px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 79.4px;
+
+  transition: 0.5s ease-in-out;
+}
+/* .counter {
+  color: #fed21c;
+  font-family: "Poppins";
+  font-size: 100.277px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 79.4px;
+
+  transition: 0.5s ease-in-out;
+} */
+.counterText {
+  color: #fed21c;
+  font-family: "Poppins";
+  font-size: 52.199px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78.298px;
+}
+.contactUs {
+  background: white;
+  padding: 40px;
+
+  color: #808191;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.contactUs label {
+  color: #808191;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #808191 !important;
+}
+.textarea {
+  height: 111px;
+}
+.contactUsBG {
+  background:  #175B834D;
+  /* width: 100%; */
+  height: 66%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.contact_form {
+  height: 70vh;
+}
+.contactUsimage {
+  width: 380.192px;
+  height: 519.92px;
+  /* padding-left: 4rem; */
+}
+.ContactFormCornerimage {
+  position: relative;
+  left: 66%;
+  bottom: 111%;
+}
+.plusOk{
+  z-index: -1;
+}
+.contactUsdots {
+  position: relative;
+  right: 66px;
+  bottom: 206px;
+  z-index: -1;
+}
+.PositionOfcounter {
+  position: relative;
+}
+.mapImage {
+  width: 100%;
+  height: 100%;
+}
+.card_width {
+  width: 200px;
+}
+.cardPosition {
+  position: absolute;
+  top: 52px;
+  right: 24%;
+}
+.secondcardPosition {
+  position: absolute;
+  top: 327px;
+  right: 34%;
+}
+.ThirdcardPosition {
+  position: absolute;
+  top: 160px;
+  right: -2%;
+}
+.fourthcardPosition {
+  position: absolute;
+  top: 327px;
+  right: 3%;
+}
+.videoStar1Position {
+  position: absolute;
+  right: 30%;
+  top: -25px;
+}
+.videoStar2Position {
+  position: absolute;
+  right: 7%;
+  bottom: 80px;
+  width: 70px;
+  height: 80px;
+}
+.videoStar3Position {
+  position: absolute;
+  right: 9.5%;
+  bottom: 23px;
+  width: 50px;
+  height: 60px;
+}
+.videoStar4Position {
+  position: absolute;
+  right: 5.5%;
+  bottom: 40px;
+  width: 40px;
+  height: 50px;
+}
+/* .rectangleFooter {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+} */
+.atmCardImg{
+  width: 350px;
+  height: 230px;
+}
+.footer {
+  border-top: 3px solid #fed21c;
+}
+.footer .link {
+  text-decoration: none;
+  color: white;
+}
+.footer .link:hover {
+  color: white;
+}
+.custom-margin {
+  margin-left: 3rem;
+}
+.atmSection {
+  width: 95.5vw;
+  margin: 20px;
+  height: 600px;
+  background:  #175B834D;
+
+  position: relative;
+}
+.atm2 {
+  position: absolute;
+  top: 15px;
+}
+.required-label{
+  
+    color: #dc3545;
+  
+}
+.atm1 {
+  position: absolute;
+  top: 237px;
+}
+.atm3 {
+  position: absolute;
+  bottom: 31px;
+}
+.atm6 {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+.atm5 {
+  position: absolute;
+  top: 227px;
+  right: 0;
+}
+.atm4 {
+  position: absolute;
+  bottom: 31px;
+  right: 0;
+}
+.curveImage {
+  position: absolute;
+  z-index: -10;
+  top: 155%;
+
+  height: 511px;
+}
+.curveImage2 {
+  position: absolute;
+  z-index: -10;
+  top: 335%;
+  height: 511px;
+}
+.navbarTop {
+  padding-right: 3rem !important;
+  padding-left: 0.5rem !important;
+  margin-top: 1rem !important;
+  position: relative;
+  z-index: 10;
+}
+
+.hamburgerDiv {
+  display: none;
+}
+.Hamburger {
+  cursor: pointer;
+}
+.responsiveNav {
+  display: none;
+}
+.curveImageinside {
+  width: 98vw;
+}
+.cardMargin {
+  margin-left: 3rem;
+}
+.marginLeft {
+  margin-left: 3rem;
+}
+.paddingTop {
+  padding-left: 3rem;
+}
+.backgroundSlider{
+  /* border: 5px solid red; */
+
+  background-image: url("../../public/Assets/slide1.png");
+  /* background-image: url("https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png"); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.serviceHeading {
+  color: #fed21c;
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px; /* 125% */
+  letter-spacing: -0.96px;
+  margin-top: 113px;
+}
+
+/* .serviceHeading::after {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  right: 0;
+  height: 100%; 
+  border-right: 2px solid #ccc; 
+} */
+
+
+
+
+
+
+/* .subHeading{
+  border: #f7cf20 1px solid;
+} */
+.serviceSubHeading {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -0.72px;
+  position: relative;
+  padding-left: 50px;
+
+}
+.serviceSubHeading::after {
+  content: ''; 
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 80%; 
+  border-left: 10px solid #fed21c;
+}
+.imageSetting{
+  position: relative;
+  width: 100%;
+
+}
+.imageSetting1{
+  position: absolute;
+  padding-top: -2rem;
+  width: 100%;
+  margin-top: 9rem;
+  object-fit: contain;
+}
+.star8{
+  float: right;
+  margin-right: 12%;
+  margin-top: 3rem
+
+}
+.star9{
+  float: right;
+  margin-top: 1%;
+margin-right: -16rem;
+}
+
+.serviceDots {
+  position: absolute;
+  top: 112px;
+  right: 20px;
+  z-index: -1;
+}
+.serviceBanner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50%;
+}
+.servicevideoStar2 {
+  position: absolute;
+  bottom: 0px;
+}
+.servicePara {
+  color: #fff;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.5px;
+}
+.ServiceRectangle {
+  position: relative;
+  top: 7.6rem;
+}
+.serviceBanner{
+  margin-top: 6rem;
+}
+.Reactangle {
+  width: 173px;
+  height: 214px;
+  position: absolute;
+  top: 131px;
+  left: 54px;
+}
+.Rectangleone {
+  width: 228px;
+  height: 262px;
+  position: absolute;
+  bottom: -7px;
+  right: 173px;
+}
+.Reactanglesecond {
+  width: 229px;
+  height: 262px;
+  position: absolute;
+  right: 83px;
+  top: -22px;
+}
+.Reactangledots {
+  position: absolute;
+  bottom: -58px;
+  right: 106px;
+  z-index: -1;
+}
+.ReactanglevideoStar1 {
+  position: absolute;
+  left: 100px;
+}
+.serviceImg {
+  width: auto;
+  height: auto;
+  margin: 6rem;
+    margin-left: 17rem
+}
+.rectangleSection {
+  position: relative;
+}
+
+.Reactangleslide {
+  position: absolute;
+  width: 98vw;
+}
+.rectangleSection1{
+  position: relative;
+  width: 100%;
+  margin-bottom: 40%
+}
+.setThis{
+  margin-top: -84rem;
+}
+/* .imageDiv{
+  position: relative;
+} */
+.Reactangleslide1{
+  /* position:fixed; */
+  /* position: relative; */
+  top: -24vh;
+  /* width: 202vh; */
+  width: 100%;
+  /* object-fit: cover; */
+  z-index: 1;
+}
+
+.firstSection{
+  position: relative;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.backImageService{
+  position:absolute;
+  width: 100%;
+  padding-left: 10rem;
+  margin-top: -12rem;
+  z-index:-8;
+  /* margin-bottom: 1rem; */
+}
+.aboutHeading {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px; /* 166.667% */
+  letter-spacing: -0.72px;
+}
+.videoSection{
+  margin-top: 7rem;
+}
+.aboutImg {
+  margin-left: 97px;
+  width: 258px;
+  height: 293px;
+  /* object-fit:scale-down; */
+}
+.serviceSection2{
+  margin-top: 10%;
+  height: 100%;
+  margin-bottom: 10%;
+}
+.aboutImg1{
+  display: none;
+  margin-left: 97px;
+  width: 270px ;
+  height: 293px;
+}
+.image-container:hover .aboutImg1 {
+  display: block;
+}
+.joyn{
+  text-align: center;
+}
+.image-container:hover .aboutImg {
+  display: none;
+}
+.aboutSection {
+  position: relative;
+  top: 6.5rem;
+}
+.aboutvideoStar2 {
+  position: absolute;
+  right: 137px;
+  top: -77px;
+}
+
+.aboutdots {
+  position: absolute;
+    right: 186px;
+    z-index: -1;
+    top: 16rem;
+
+}
+.threedModel >.canvas-1 > div{
+  /* width: 56vh;
+  height: 56vh; */
+  position: absolute;
+  left: 1px;
+
+}
+.canvas-1{
+  width: 600px !important;
+  height: 600px !important;
+  /* padding-left: 700px; */
+  /* border: 2px solid red; */
+}
+.slideMain{
+  margin-top: 6rem;
+  /* margin-bottom: 6rem; */
+
+}
+.pageMargin{
+  margin-top: 10rem;
+}
+.servicesCheck{
+  /* margin-bottom: 7%; */
+  height: 100%;
+  /* margin-bottom: -5%; */
+  /* height: 100%; */
+  margin-bottom: 10%;
+}
+
+.contactSection2{
+  height: 100%;
+  margin-bottom: 5%;
+}
+.commonSectionRectangle {
+  margin-top: 93px;
+}
+.commonSectiondots {
+  width: 236px !important;
+  height: 236px;
+  position: absolute;
+  left: 108px;
+  z-index: -1;
+  top: 220px;
+}
+.commonSectionvideoStar1 {
+  position: absolute;
+  right: 28%;
+}
+.aboutUsCards {
+  width: 166px;
+  height: 200px;
+}
+.aboutUsCards1{
+  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
+  display: none;
+  object-fit: contain;
+
+}
+.aboutUsCards.ADDED{
+  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.image-container:hover .aboutUsCards1 {
+  display: block;
+}
+.image-container:hover .aboutUsCards {
+  display: none;
+}
+.aboutUsCardsText {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+}
+.newsImg {
+  /* position: absolute; */
+  margin-top: 5rem;
+  width: 100%;
+  height: 500px;
+  /* object-fit: contain; */
+}
+.newsDots {
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  z-index: -1;
+}
+.newsvideoStar2 {
+  position: absolute;
+  z-index: 1;
+  left: -6%;
+  top: 250%;
+}
+.newsBackground {
+margin-left: 0rem;
+  background: #175B834D;
+  height: 350px;
+  width: 290px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.newsCards {
+  height: 155px;
+  width: 18.2rem;
+  max-width: 100%;
+}
+.checkcheck{
+  max-width: 100%;
+}
+.gapblogCard{
+  /* gap: 318px !important; */
+  /* width: 100%; */
+}
+.newsCardsPara {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 12.185px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.277px;
+  margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    /* max-width: 100%; */
+}
+.newsCardsHeading {
+  padding-top: 1.5rem;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 17.369px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.462px;
+  /* max-width: 100%; */
+}
+.hash {
+  color: #f7cf20;
+  font-family: "Poppins";
+  font-size: 10.185px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15.277px;
+}
+.tags {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 10.185px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15.277px;
+}
+.accordianTitle {
+  color: #f7cf20;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+  letter-spacing: -0.24px;
+}
+.accordianBorder {
+  border: 1px solid #f7cf20;
+}
+.accordianContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Adjust the transition duration as needed */
+}
+
+/* Apply a class to show the accordion content */
+.accordianContent.show {
+  max-height: 1000px; /* Set an appropriate maximum height to accommodate the content */
+  transition: max-height 0.5s ease-in;
+}
+.vaccanciesText {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 150% */
+  letter-spacing: -0.3px;
+}
+.projectvideoStar2 {
+  position: absolute;
+  right: 10%;
+  top: 76px;
+}
+.text_decoration_none {
+  text-decoration: none;
+  width: 1rem;
+}
+.commonSectionRectangle{
+  width: 344px;
+  height: 439px;
+}
+.commonSectionRectangleOne{
+  width: 300px;
+  height: 400px;
+}
+.humanResourcecard1{
+  width: 100%;
+}
+.news11{
+  margin-top: -9rem;
+}
+.aboutSectionHowWeWork{
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .servicePara.servicePara1{
+    margin-top: -23rem;
+    /* margin-bottom: 25rem; */
+  }
+ 
+  .checkcheck{
+    /* margin-top: -10rem; */
+
+    /* margin-bottom: 1rem; */
+    /* border: 2px solid red; */
+  }
+  /* .articleSection2{
+    margin-top: -22rem;
+  } */
+  .projectvideoStar2 {
+    display: none;  
+  }
+  .newsBackground {
+    margin-top: 30px;
+  }
+  .aboutImg {
+    margin-left: 0;
+    width: 70vw;
+    height: 422px;
+  }
+  .commonSectionRectangleOne {
+    width: 164px;
+    height: 236px;
+  }
+  .commonSectionRectangle {
+    margin-top: 93px;
+    width: 164px;
+    height: 236px;
+    margin-left: 8px;
+  }
+  .commonSectiondots {
+    width: 224px !important;
+    height: 214px;
+    position: absolute;
+    left: 93px;
+    z-index: -1;
+    top: 110px;
+  }
+  .Reactanglesecond {
+    width: 150px;
+    height: 197px;
+    position: absolute;
+    right: -50px;
+    top: 25px;
+  }
+  .Reactangle {
+    width: 124px;
+    height: 152px;
+    position: absolute;
+    top: 144px;
+    left: 119px;
+  }
+  .Rectangleone {
+    width: 150px;
+    height: 197px;
+    position: absolute;
+    bottom: 338px;
+    right: -48px;
+  }
+  .Reactangledots {
+    position: absolute;
+    bottom: 103px;
+    right: -37px;
+    z-index: -1;
+  }
+  .heroSection_icon2 {
+    top: 35%;
+  }
+  .paddingTop {
+    /* padding-left: 0; */
+  }
+  .marginLeft {
+    margin-left: 0;
+  }
+  .heroSectionHeading {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 63.333px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 120px;
+    z-index: 222;
+    position: relative;
+  }
+  .breakTag {
+    display: none;
+  }
+  section {
+    height: auto;
+  }
+  .contactUsBG {
+    display: none;
+  }
+  .contactUs{
+    border-radius: 10px;
+  }
+
+  .dots {
+    left: 34%;
+  }
+  .cardsDiv {
+    margin-bottom: 50px;
+  }
+  .navbarTop {
+    padding-left: 0 !important;
+  }
+  .button {
+    width: 148px;
+  }
+  .heroSectionImage {
+    width: 89%;
+    height: 82%;
+  }
+
+  element.style {
+    color: transparent;
+  }
+
+  .curveImage {
+    display: none;
+  }
+  .curveImage2 {
+    display: none;
+  }
+
+  .cardPosition {
+    position: absolute;
+    top: 652px;
+    right: 15%;
+  }
+  .ThirdcardPosition {
+    position: absolute;
+    top: 802px;
+    right: 12%;
+  }
+  .secondcardPosition {
+    position: absolute;
+    top: 621px;
+    right: 59%;
+  }
+  .fourthcardPosition {
+    position: absolute;
+    top: 827px;
+    right: 68%;
+  }
+  .aboutvideoStar2 {
+    display: none;
+  }
+  .atmSection {
+    width: 95.5vw;
+    margin: 8px;
+    height: 600px;
+    background: #175b83;
+    position: relative;
+    margin-top: 30px;
+  }
+  .rectangleSection1{
+    position: relative;
+    margin-bottom: 70%;
+    width: 100%;
+  }
+  .imageDiv{
+    margin-top: -7rem;
+  }
+.Reactangleslide1{
+  /* position: absolute; */
+  width: 100%;
+  top: -15rem;
+  object-fit: cover;
+}
+  .star8{
+    position: relative;
+    left: 10rem;
+  }
+  .star9{
+    position: relative;
+    left: 6rem;
+    top: 5rem;
+  }
+  .imageSetting{
+    position: relative;
+  }
+  .imageSetting1{
+position: absolute;
+object-fit: contain;
+top: -10rem;
+  }
+.rectangleSection2{
+  /* margin-bottom: 20%; */
+  margin-bottom: 10% !important;
+}
+.mainBenefitCard{
+  display: flex;
+  flex-direction: column;
+  /* border: 4px solid red; */
+}
+.benefitCard{
+  
+  width: 25rem !important;
+  height: 17rem !important;
+}
+
+.childBenefit{
+  left: 34.5rem !important;
+  height: 13rem !important;
+}
+.benefitSubHeading{
+  margin-right: 2rem;
+}
+.dotPic{
+  margin-right: 4rem
+}
+.serviceCardRow{
+  margin-top: 13rem !important;
+  margin-left: 6rem !important;
+  /* text-align: center !important; */
+}
+.rectangleSection3{
+  margin-top: 10rem;
+  margin-bottom: 30% !important
+}
+.section4{
+  margin-top: 70% !important;
+  margin-bottom: 90% !important;
+}
+.jobFirstSubSlider{
+  width: 40rem !important;
+
+
+}
+.aboutImg{
+  width: 22rem;
+  margin-left: 4rem;
+}
+}
+@media screen and (max-width: 870px) {
+  .hamburgerDiv {
+    display: block;
+    /* text-align: end; */
+    /* margin-left: 303px; */
+    margin-top: 10px;
+  }
+  .responsiveNavButton {
+    margin-left: 36px;
+  }
+
+  .menu {
+    margin-left: 33px;
+  }
+  .createAccount {
+    display: none;
+  }
+  .menuItems {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+    background: rgba(4, 30, 46, 0.9);
+    z-index: 22222;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    transition: height 0.8s ease;
+  }
+  .aboutImg {
+    margin-left: 2rem;
+    width: 49vw;
+    height: 422px;
+  }
+  .Reactangle {
+    width: 124px;
+    height: 152px;
+    position: absolute;
+    top: 144px;
+    left: 74px;
+  }
+  .Reactanglesecond {
+    width: 150px;
+    height: 197px;
+    position: absolute;
+    left: 60%;
+    top: 25px;
+  }
+  .Reactangledots {
+    position: absolute;
+    bottom: 132px;
+    right: 2%;
+    z-index: -1;
+    width: 130px;
+    height: 176px;
+  }
+  .Rectangleone {
+    width: 150px;
+    height: 197px;
+    position: absolute;
+    bottom: 251px;
+    left: 42.5%;
+  }
+  .Reactangleslide {
+    position: absolute;
+    width: 97vw;
+  }
+  .videoStar1Position {
+    display: none;
+  }
+  .videoStar2Position {
+    display: none;
+  }
+  .videoStar3Position {
+    display: none;
+  }
+  .videoStar4Position {
+    display: none;
+  }
+  .heroSectionHeading {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 42.333px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 120px;
+  }
+  .atmSection {
+    width: 92.5vw;
+    margin: 11px;
+    height: 600px;
+    background: #175b83;
+    position: relative;
+  }
+
+
+  .rectangleSection1{
+    position: relative;
+    width: 100%;
+    margin-bottom: 110%;
+  }
+  .Reactangleslide1{
+    /* position: absolute; */
+    object-fit: cover;
+    /* top: -20rem; */
+    /* padding-left: 3rem */
+  }
+  .star8{
+    left: 5rem;
+    top: 4rem;
+  }
+  .star9{
+    left: 3rem;
+    top: 7rem;
+  }
+  .dotPic{
+margin-right: 0rem;
+  }
+  .jobFirstSubSlider{
+    position: absolute;
+    left: -3rem !important;
+  
+  }
+}
+@media screen and (max-width: 768px){
+  .serviceSliderFix{
+    width: 22rem;
+    left: 0rem;
+  }
+  .aboutSectionHowWeWork{
+    /* height: 100%; */
+    margin-bottom: 20%;
+  }
+  .servicePara.servicePara1{
+    /* margin-top: -23rem;
+    margin-bottom: 21rem; */
+  }
+  .articleSection2{
+    margin-top: -14rem;
+    margin-bottom: 4rem;
+  }
+  .dots{
+    margin-left: -15rem ;
+  }
+}
+/* Navbar Responsiveness */
+@media screen and (max-width: 767px) {
+  .servicesCheck{
+    /* margin-bottom: 30%; */
+  }
+  .servicePara.servicePara1{
+    margin-top: -17rem;
+  }
+  .humanResourcecard1{
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  .slideMargin1{
+    margin-top: 1rem;
+  }
+  .responsiveNavButton {
+    margin-left: 0;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+  .aboutImg {
+    margin-left: 0;
+    width: 68vw;
+    height: 422px;
+  }
+  .commonSectiondots {
+    width: 224px !important;
+    height: 214px;
+    position: absolute;
+    left: 26px;
+    z-index: -1;
+    top: 79px;
+  }
+  .commonSectionRectangle {
+    margin-top: 93px;
+    width: 164px;
+    height: 236px;
+    margin-left: -36px;
+  }
+  .ServiceRectangle {
+    position: relative;
+    height: 300px;
+    width: auto;
+    top: 75px;
+  }
+  .Reactangleslide {
+    display: none;
+  }
+  .ReactanglevideoStar1 {
+    position: absolute;
+    left: 158px;
+    top: -70px;
+  }
+
+  .Reactangle {
+    width: 107px;
+    height: 122px;
+    position: absolute;
+    top: 19px;
+    left: 24.5%;
+  }
+  .Rectangleone {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    bottom: 221px;
+    left: 47.5%;
+  }
+  .Reactanglesecond {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    left: 40%;
+    top: 114px;
+  }
+  .Reactangledots {
+    position: absolute;
+    bottom: 116px;
+    right: 27%;
+    z-index: -1;
+    width: 130px;
+    height: 176px;
+  }
+
+  .card1 {
+    width: 288px;
+    height: 107px;
+  }
+  .card2 {
+    position: absolute;
+    width: 285.857px;
+    height: 174.139px;
+    right: 6%;
+    top: 9%;
+  }
+  .card3 {
+    position: absolute;
+    width: 288.869px;
+    height: 123.531px;
+    bottom:-4%;
+    right: 5%;
+  }
+  .heroSection_icon2 {
+    top: 45%;
+    right: 44px;
+  }
+  .marginLeft {
+    min-width: 239px !important;
+    position: relative;
+    top: 32px;
+    right: 25px;
+  }
+  .videoStar1Position {
+    display: none;
+  }
+  .videoStar2Position {
+    display: none;
+  }
+  .videoStar3Position {
+    display: none;
+  }
+  .videoStar4Position {
+    display: none;
+  }
+  /* .mapImage {
+    width: 504px;
+    height: 551px;
+  } */
+  .card_width {
+    width: 152px;
+    height: 76px !important;
+  }
+  .custom-margin {
+    margin-left: 5px;
+  }
+  .dots {
+    left: 11%;
+    top: 170px;
+  }
+  .videoStar2 {
+    display: none;
+  }
+
+  .navbarTop {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 1rem !important;
+  }
+
+  .hamburgerDiv {
+    display: block;
+    /* text-align: end; */
+    /* margin-left: 303px; */
+    margin-top: 10px;
+  }
+  .responsiveNav {
+    display: block;
+    background: rgba(4, 30, 46, 0.9);
+    z-index: 22222;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    transition: height 0.8s ease;
+  }
+  .responsiveNavmenu {
+    padding-left: 15%;
+  }
+  .responsiveNavButton {
+    padding-left: 12.5%;
+  }
+
+  .menuItems {
+    display: none;
+  }
+  .createAccount {
+    display: none;
+  }
+  .heroSection_icon3 {
+    /* position: absolute; */
+    bottom: 37%;
+    right: 23%;
+    width: 70.013px;
+    height: 70.013px;
+  }
+  .star8{
+    top: 8rem;
+  }
+  .star9{
+    top: 9rem;
+    left: 3rem
+  }
+
+.childBenefit{
+  margin-left: -18rem !important;
+    /* margin-top: 0rem; */
+}
+.dotPic{
+  margin-right: 1rem;
+}
+/* .onlyForChecking{
+  width: 99% !important
+} */
+.aboutImg{
+  width: 18rem;
+}
+}
+
+@media screen and (max-width: 700px) {
+  .serviceDots {
+    display: none;
+  }
+  .servicevideoStar2 {
+    display: none;
+  }
+  .responsiveNavmenu {
+    padding-left: 11%;
+  }
+  .responsiveNavButton {
+    padding-left: 8.5%;
+  }
+  .dotPic{
+    margin-right: 0rem;
+  }
+  .backImageService{
+    display: none;
+  }
+  .serviceImg{
+    /* width: 70rem; */
+    margin-right: 15rem;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .HomeSectionImage{
+    border-radius: 10px;
+    left: 2rem;
+  }
+  .servicesCheck{
+    /* margin-bottom: 40%; */
+  }
+  .newsImg {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: -61%;
+    margin-top: -13%;
+  }
+  .newsvideoStar2 {
+    display: none;
+  }
+  .newsDots {
+    display: none;
+  }
+  .aboutImg {
+    margin-left: 74px;
+    width: 56vw;
+    height: 422px;
+  }
+  .serviceImg {
+    width: 74vw;
+    height: 325px;
+  }
+  .cardMargin {
+    margin-left: 1rem;
+  }
+
+  .responsiveNavmenu {
+    padding-left: 7%;
+  }
+  .responsiveNavButton {
+    padding-left: 3.5%;
+  }
+  .header {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+ .rectangleSection1{
+  margin-bottom: 130%;
+ }
+  .Reactangleslide1{
+    top: -26rem
+    
+  }
+  .imageDiv{
+    margin-top: -8rem;  
+  }
+  .star8{
+    top: 5rem;
+    left: 1rem;
+  }
+  .star9{
+    top: 2rem;
+    left: 2rem
+  }
+  .imageSetting1{
+    top: -15rem;
+  }
+  .dotPic{
+    margin-right: -3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aboutSectionHowWeWork{
+    /* height: 100%; */
+    margin-bottom: 30%;
+  }
+  /* .imageSetting1{
+    margin-top: -1%;
+  } */
+.aboutSection1 {
+    margin-bottom: 15rem !important;
+}
+  .servicCardOnlySmall{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  .servicePara.servicePara1{
+    margin-top: -12rem;
+  }
+.galleryVideoParent{
+  margin-top: 8rem;
+}
+  .aboutImg {
+    margin-left: 0;
+    width: 92vw;
+    height: 422px;
+  }
+  .secondcardPosition {
+    position: absolute;
+    top: 621px;
+    right: 54%;
+  }
+  .fourthcardPosition {
+    position: absolute;
+    top: 827px;
+    right: 63%;
+  }
+  .marginLeft {
+    min-width: 239px !important;
+    position: relative;
+    top: 32px;
+    right: 62px;
+  }
+  .cardWidth {
+    margin-bottom: 12px;
+  }
+  /* .mapImage {
+    width: 442px;
+    height: 492px;
+  } */
+
+  .responsiveNavmenu {
+    padding-left: 15px;
+  }
+  .responsiveNavButton {
+    padding-left: 0;
+  }
+  .card1 {
+    position: absolute;
+    width: 288px;
+    height: 107px;
+    bottom: 39%;
+    right: 45%;
+  }
+  .dots {
+    display: none;
+  }
+  .atmSection {
+    margin-top: 15px;
+    margin: 0;
+  }
+  .rectangleSection1{
+    margin-bottom: 140%;
+    }
+    .setThis{
+          margin-top: -77rem;
+    }
+    .imageDiv{
+     margin-top: -17rem;
+
+
+    }
+  .star9{
+    top: 4rem;
+    left: 0rem;
+  }
+  .childBenefit{
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  .dotPic{
+    margin-right: -5rem;
+  }
+.serviceCardCol{
+  margin-bottom: 1rem !important;
+}
+.heroSectionHeading{
+  /* font-size: 30rem; */
+  width: 31rem !important;
+
+}
+}
+@media screen and (max-width: 504px) {
+  .servicesCheck{
+    /* margin-bottom: 55%; */
+  }
+  /* .threedModel{
+    display: none;
+  } */
+  .rectangleSection3 {
+    /* margin-top: 10rem; */
+    margin-bottom: -46% !important;
+}
+  .imageSetting{
+    margin-bottom: -9rem;
+
+  }
+  /* .servicCardOnlySmall{
+    margin-left: 10%;
+  } */
+  .sliderMain{
+    /* border: 2px solid red; */
+    /* padding-left: 16%; */
+    /* margin-left: -2em; */
+  }
+  .commonSectionRectangleOne {
+    width: 142px;
+    height: 190px;
+  }
+  .commonSectionRectangle {
+    margin-top: 93px;
+    width: 142px;
+    height: 190px;
+    margin-left: -8px;
+  }
+  .commonSectiondots {
+    width: 130px !important;
+    height: 170px;
+    position: absolute;
+    left: 26px;
+    z-index: -1;
+    top: 79px;
+  }
+  .Reactangle {
+    width: 107px;
+    height: 122px;
+    position: absolute;
+    top: 19px;
+    left: 9.5%;
+  }
+  .ReactanglevideoStar1 {
+    position: absolute;
+    left: 59px;
+    top: -70px;
+  }
+  .Rectangleone {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    bottom: 206px;
+    left: 7rem
+  }
+  .Reactanglesecond {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    left: 7rem;
+    top: 114px;
+  }
+  .Reactangledots {
+    position: absolute;
+    bottom: 116px;
+    right: 32%;
+    z-index: -1;
+    width: 130px;
+    height: 176px;
+  }
+  .heroSectionHeadingatmSection {
+    display: none;
+  }
+  .atmSectionHeading {
+    position: relative;
+    top: 193px;
+    z-index: 22;
+    display: block;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 65.333px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 120px;
+  }
+  .card1 {
+    position: absolute;
+    width: 288px;
+    height: 107px;
+    bottom: 31%;
+    right: -1%;
+    left: 1rem;
+  }
+  .secondcardPosition {
+    position: absolute;
+    top: 680px;
+    right: 54%;
+  }
+  .fourthcardPosition {
+    position: absolute;
+    top: 827px;
+    right: 54%;
+  }
+  .marginLeft {
+    min-width: 239px !important;
+    position: relative;
+    top: 180px;
+    right: 91px;
+  }
+  /* .mapImage {
+    width: 349px;
+    height: 492px;
+  } */
+  /* .heroSection_icon2 {
+    display: none;
+  }
+
+  .heroSection_icon1 {
+    display: none;
+  }
+  .heroSection_icon3 {
+    display: none;
+  } */
+  .card1{
+    display: none;
+  } 
+  .card2{
+    display: none;
+  } 
+  .card3{
+    display: none;
+  } 
+  .cardMargin {
+    margin-left: 3rem;
+    flex-wrap: wrap;
+  }
+  .cardMargin2 {
+    margin-left: 3rem;
+    flex-wrap: wrap;
+  }
+  .atm6 {
+    width: 129px;
+  }
+  .atm2 {
+    position: absolute;
+    top: 15px;
+    width: 133px;
+  }
+  .atm5 {
+    position: absolute;
+    top: 227px;
+    right: 0;
+    width: 144px;
+  }
+  .atm4 {
+    position: absolute;
+    bottom: 31px;
+    right: 0;
+    width: 129px;
+  }
+  .atm3 {
+    position: absolute;
+    bottom: 31px;
+    width: 155px;
+  }
+  .atm1 {
+    position: absolute;
+    top: 237px;
+    width: 147px;
+  }
+  .benefitCard{
+    height: 20rem !important;
+  }
+  .childBenefit{
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    margin-left: -20rem !important;
+    width: 40% !important;
+    height:65% !important;
+  }
+  .benefitSubHeading{
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+  .serviceCardRow{
+    margin-left: 0rem !important;
+  }
+  .heroSectionHeading{
+    width: 22rem !important;
+  
+  }
+}
+@media screen  and (max-width:480px){
+  .childBenefit{
+    margin-left: -22rem !important;
+  }
+  
+}
+@media screen  and (max-width:450px){
+  .childBenefit{
+    width: 10rem !important;
+    margin-left: -23.5rem !important;
+  }
+  
+}
+
+@media screen and (max-width:430px){
+  .canvas-1{
+    /* width: 100% !important; */
+    /* border: 2px solid red; */
+    /* height: 600px !important;
+    padding-left: 700px; */
+    /* border: 2px solid red; */
+  }
+  .checkcheck{
+    width: 21rem !important;
+    margin-left: 2rem;
+  }
+  .star9{
+    top: 1rem !important;
+  }
+  .imageSetting1{
+    /* margin-top: 14rem; */
+  }
+  .childBenefit{
+    max-width: 10rem;
+    margin-left: -21.5rem !important;
+
+  }
+  .benefitSubHeading{
+    margin-right: -2rem !important;
+  }
+  .jobFirstSubSlider{
+    /* border: 5px solid red; */
+    width: 22rem !important;
+  }
+  .mainJobCard{
+    margin-top: 11rem !important;
+    /* border: 5px solid rgb(27, 218, 100); */
+    /* width: 12rem !important; */
+    /* margin-left: 23rem !important; */
+    /* margin-left: 23.5rem !important; */
+    left: -2rem;
+    max-width: 18rem;
+    height: 23rem !important;
+  }
+  .jobImage{
+    display: none;
+  }
+  .jobButton{
+    margin-left: -11rem;
+  }
+  .mainJobSlider{
+    gap: 1rem;
+  }
+  .rectangleSection3{
+    margin-top: 5rem;
+  }
+  .section4{
+    margin-bottom: 9rem !important;
+  }
+  /* .mapImage{
+    width: 26rem !important;
+
+  } */
+}
+@media screen and (max-width: 404px) {
+  .aboutImg {
+    margin-left: 0;
+    width: 89vw;
+    height: 422px;
+  }
+  .commonSectionRectangle {
+    margin-top: 93px;
+    width: 142px;
+    height: 190px;
+    margin-left: -25px;
+  }
+  .Rectangleone {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    bottom: 206px;
+    left: 44.5%;
+  }
+  .Reactanglesecond {
+    width: 122px;
+    height: 141px;
+    position: absolute;
+    left: 33%;
+    top: 114px;
+  }
+  .Reactangledots {
+    position: absolute;
+    bottom: 116px;
+    right: 15%;
+    z-index: -1;
+    width: 130px;
+    height: 176px;
+  }
+  .serviceImg {
+    width: 74vw;
+    height: 287px;
+  }
+  .atmSectionHeading {
+    position: relative;
+    top: 193px;
+    z-index: 22;
+    display: block;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 60.333px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 120px;
+  }
+  .card1 {
+    position: absolute;
+    width: 288px;
+    height: 107px;
+    bottom: 47%;
+    right: 1%;
+  }
+  .fourthcardPosition {
+    position: absolute;
+    top: 948px;
+    right: 54%;
+  }
+  .ThirdcardPosition {
+    position: absolute;
+    top: 851px;
+    right: 12%;
+  }
+  .secondcardPosition {
+    position: absolute;
+    top: 747px;
+    right: 54%;
+  }
+  .cardPosition {
+    position: absolute;
+    top: 663px;
+    right: 15%;
+  }
+  .marginLeft {
+    min-width: 239px !important;
+    position: relative;
+    top: 209px;
+    right: 112px;
+  }
+
+  .heroSection_icon2 {
+    display: none;
+  }
+  .heroSection_icon1 {
+    display: none;
+  }
+  .heroSection_icon3 {
+    display: none;
+  }.rectangleSection1
+  .card2 {
+    display: none;
+  }
+  .atmSection {
+    width: 90vw;
+    margin: 20px;
+    height: 600px;
+    background: #175b83;
+    position: relative;
+  }
+
+  .Reactangleslide1{
+    top: -31rem;
+  }
+  .star8{
+    top: 8rem;
+    left: 3rem;
+  }
+
+
+.rectangleSection1{
+  margin-bottom: 150%;
+}
+.benefitSubHeading{
+  margin-right: -2rem;
+}
+.childBenefit{
+  /* width: 10rem !important; */
+  max-width: 9rem;
+  margin-left: -22rem !important
+}
+}
+/* Navbar Responsiveness */
+
+
+
+.buttonMore{
+  margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+.heroSectionHeading{
+  width: 34rem;
+  font-size: 47.333px;
+}
+.benefitHeading{
+  font-size: xx-large;
+}
+.benefitSubHeading{
+  padding-right: 13rem !important;
+}
+  .childBenefit{
+    /* left: 1rem; */
+    margin-left: -5.5rem;
+    /* border: 3px solid red; */
+  }
+  
+}
+
+
+
+.sliderMain{
+  display: flex;
+  justify-content: center;
+/* padding-left: 130px; */
+}
+.slick-dots{
+  display: none !important;
+}
+
+.mainBenefitCard{
+  display: flex;
+  gap: -1rem;
+}
+
+
+
+.benefitCard{
+  background-color: rgba(23, 91, 131, 0.3);
+  width: 88%;
+  height: 80%;
+  border-radius: 15px;
+  border-top: 4px solid white;
+  margin-top: 6rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* word-wrap: break-word; */
+  /* text-overflow: ellipsis; */
+  /* overflow: auto; */
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.section4{
+  /* margin-top: 700px; */
+  /* margin-bottom: -; */
+  height: 100%;
+  margin-bottom: 10%;
+}
+
+.childBenefit{
+  position: absolute;
+  width: 35%;
+  height: 80%;
+  left: 21rem;
+  top: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  border-radius: 15px;
+  border-top: 4px solid #FED21C;
+  border-right: 4px solid #FED21C;
+  background-color: white;
+  box-sizing: border-box;
+}
+.pic1{
+  margin-top: 1rem;
+  width: 9rem;
+  height: 7rem;
+}
+.benefitHeading{
+  margin: 1rem;
+}
+.benefitSubHeading{
+  padding-right: 40%;
+  padding-left: 3%;
+}
+.dotPic{
+  position: absolute;
+    right: 10rem;
+    margin-top: 2rem;
+    object-fit:cover;
+}
+.para{
+  margin-top: 5rem ;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.27px;
+  text-align: justify;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+.jobCard{
+  display: flex;
+  gap: 40px;
+  margin-left: 420px;
+
+}
+/* -----------------------------------------------------JobCard----------------------------------------------------------- */
+.mainJobCard{
+  background-color: #175B834D;
+   position: relative;
+    margin-bottom:3rem;
+    height: 19.75rem;
+    border-radius: 1pc;
+    width:34rem !important;
+    margin-left: 4rem !important;
+}
+.linkinIconChanging{
+  position: absolute;
+  top: 41px;
+  left: 34px;
+  width: 60px !important;
+  height: 64px;
+}
+.jobButton{
+  /* border: 2px solid red; */
+  position: absolute;
+  left: 20rem;
+  top: 3rem;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.6rem;
+  background-color:white
+}
+.mainServiceCard.heigh100{
+  height: 100% !important;
+}
+
+.jobTitle{
+  position: absolute;
+  width: -1px;
+  height: 18rem;
+  top: 108px;
+  left: 34px;
+}
+
+.jobParagraph{
+  position: absolute;
+  top: 158px;
+}
+@media screen and (max-width:1312px){
+ 
+  .benefitCard{
+    width: 100% !important;
+  }
+  .childBenefit{
+    top: 2rem;
+    left: 20.5rem;
+    width: 12rem !important;
+  }
+  .dotPic{
+    right: 6rem;
+  }
+  .mainJobCard{
+    width: 30.5rem !important;
+  }
+
+  
+}
+@media (min-width: 1312px) and (max-width: 1399.98px) {
+    .childBenefit.anotherOne{
+  left: 18rem !important;
+}
+
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+.newsCardsHeading{
+  font-size: 16.369px;
+}
+.mainServiceCard{
+  width: 17rem !important;
+  /* height: 29rem !important; */
+}
+.serviceCardHeading{
+  font-size: 1.4rem;
+}
+
+
+}
+@media (min-width: 991px) and (max-width: 1199.98px) {
+  .contactUsimage{
+    width: 100%;
+  }
+  /* .servicesCheck{
+    border: 2px solid red;
+    margin-bottom: 20%
+  } */
+  .Reactanglesecond {
+    width: 229px;
+    height: 262px;
+    position: absolute;
+    right: 6px;
+    top: -22px;
+}
+  .Rectangleone {
+    width: 228px;
+    height: 262px;
+    position: absolute;
+    bottom: 70px;
+    right: 84px;
+}
+  .newsCardsHeading.againHeading{
+    margin-top: -3rem;
+  }
+  .servicePara.servicePara1{
+    margin-top: 10rem;
+  }
+  .mainServiceCard{
+    width: 14.5rem !important;
+    /* height: 31rem !important; */
+  }
+  .serviceCardHeading{
+    font-size: 1rem;
+  }
+  .servicePicSetting{
+    margin-left: 1rem !important;
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 990.98px) {
+  .articleSection2{
+    /* border: 2px solid black; */
+    margin-top: -24rem;
+    margin-bottom: 10rem;
+  
+  }
+ 
+
+}
+@media screen and (max-width:1399px) {
+
+/* .childBenefit.anotherOne{
+    left: 18rem !important;
+  } */
+}
+@media screen and (max-width:1024px){
+ .jobFirstSubSlider{
+  margin-right: 12rem !important;
+  margin-left: 1rem !important;
+ }
+ .dots{
+
+left: 16rem;
+top: 9rem;
+}
+/* .mapImage{
+  width: 24rem !important;
+  height: 38rem;
+} */
+
+
+}
+/* ---------------------------------------------------Job-Slider------------------------------------------------------------ */
+.mainJobSlider{
+  margin-top: -8rem;
+  margin-left: -1rem;
+  margin-left: 3rem !important;
+}
+.jobFirstSubSlider{
+  margin:-4rem;
+}
+
+.aboutSection1{
+  margin-bottom: 41rem;
+}
+.changing-text {
+  /* font-size: 24px; */
+  animation: fadeout 3s ease-in-out forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+}
+  /* 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    /* visibility: hidden; */
+  /* }  */
+}
+/* ----------------------------------------------------ServiceCard------------------------------------------------------------------- */
+.cardDisplay{
+  display:flex;
+  gap: 30px;
+}
+.mainServiceCard{
+  /* width: 100%; */
+  /* height: 100%; */
+  /* max-width: 25%; */
+  width:19.25rem;
+  height: 27.875rem;
+  background-color: #175B834D;
+  border-radius: 14px 14px 14px 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+.colCheck{
+  text-align: center;
+}
+.servicePicSetting{
+  margin-left: 5.4rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.serviceCardPara{
+  font-weight: 100;
+    font-family: 'Montserrat';
+}
+
+.onlyForChecking{
+  width: 90%;
+}
+
+.rectangleSection2{
+  /* height: 100%; */
+  margin-bottom: -20%;
+}
+.serviceCards{
+  gap: 1rem;
+  /* width: 110%; */
+}
+.serviceCardCol{
+  width: 100%;
+}
+.articleSection2{
+  height: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.videoSection{
+  height: 100%;
+}
+.check{
+  
+}
